@@ -1,0 +1,27 @@
+.NotFound {
+  width: 100%;
+  height: 100vh;
+  background: #161516;
+  color: #7c522f;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    font-size: 180px;
+    margin-top: 200px;
+  }
+
+  p {
+    font-size: 80px;
+  }
+
+  button {
+    width: auto;
+    height: auto;
+    background: transparent;
+    color: #D58C51;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+  }
+}

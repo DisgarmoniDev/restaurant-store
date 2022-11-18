@@ -1,0 +1,16 @@
+.CardBtn {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #D58C51;
+    background: #D58C51;
+  }
+}
+

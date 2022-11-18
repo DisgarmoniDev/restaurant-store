@@ -1,0 +1,158 @@
+.ProductPage {
+  background-color: #161516;
+  background: url('../../../public/img/bgCard.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 55px;
+
+    .navBtn {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #D58C51;
+        border-radius: 50%;
+        cursor: pointer;
+        background: transparent;
+        background-image: url('../../../public/img/arrow.svg');
+        background-position: center;
+        background-size: 15px;
+        background-repeat:no-repeat;
+    }
+
+    &__baskets {
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+      .headBtn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #D58C51;
+        width: 200px;
+        height: 42px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #D58C51;
+      }
+    }
+    &__basket {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      &-info {
+        font-weight: 500;
+        font-size: 17px;
+        white-space: pre-line;
+        text-align: right;
+      }
+
+      &-btn {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background: url('../../../public/img/basket.svg');
+        cursor: pointer;
+      }
+    }
+  }
+
+  .cardProduct {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+    .card {
+      width: 100%;
+      height: auto;
+      border: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: start;
+
+
+      img {
+        width: 500px;
+        height: 500px;
+        grid-column: 1/2;
+        grid-row: 1/6;
+      }
+
+      &__title {
+        min-height: 74px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: start;
+        font-weight: 500;
+        font-size: 30px;
+        color: #D58C51;
+      }
+
+      &__description {
+        grid-column: 2/3;
+        justify-self: start;
+        grid-row: 3/4;
+
+        width: 100%;
+        height: auto;
+        max-width: none;
+        min-height: 100px;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 0;
+      }
+
+      &__bottom {
+        width: 100%;
+        max-width: 650px;
+        grid-column: 2/3;
+        justify-self: start;
+        grid-row: 4/5;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-price {
+          font-weight: 500;
+          font-size: 23px;
+        }
+
+        &-price span {
+          font-weight: 400;
+          font-size: 18px;
+        }
+
+        .CardBtn {
+          width: 200px;
+          height: 42px;
+          background: #D58C51;
+          color: #131313;
+          border: none;
+          border-radius: 0;
+
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+
+          &:hover {
+            background: #b47542;
+          }
+        }
+      }
+    }
+  }
+}

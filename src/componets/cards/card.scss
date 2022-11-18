@@ -1,0 +1,32 @@
+.card {
+  border: 1px solid #D58C51;
+  color: #fff;
+
+  &__title {
+    min-height: 40px;
+    height: 40px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 310px;
+    min-height: 54px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 20px 0 20px;
+  }
+
+  &__bottom-price {
+    font-weight: 500;
+    font-size: 17px;
+
+    span{
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}
